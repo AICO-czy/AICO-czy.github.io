@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "度假区",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "草原风情度假区", "Comment": "度假区", "Lat": 41.7021, "Lng": 116.398, "LB": "度假区", "lx": null }, "geometry": { "type": "Point", "coordinates": [ 116.398331927175917, 41.702133131692449 ] } },
+{ "type": "Feature", "properties": { "Name": "塞上风光度假区", "Comment": "度假区", "Lat": 42.1204, "Lng": 117.037, "LB": "度假区", "lx": "旅游环线" }, "geometry": { "type": "Point", "coordinates": [ 117.037312385681588, 42.120442376517403 ] } },
+{ "type": "Feature", "properties": { "Name": "温泉养生度假区", "Comment": "度假区", "Lat": 41.4831, "Lng": 118.091, "LB": "度假区", "lx": "旅游环线" }, "geometry": { "type": "Point", "coordinates": [ 118.091264894951536, 41.483074002843196 ] } },
+{ "type": "Feature", "properties": { "Name": "皇家康养度假区", "Comment": "度假区", "Lat": 40.938, "Lng": 117.934, "LB": "度假区", "lx": "红色旅游路路线" }, "geometry": { "type": "Point", "coordinates": [ 117.933556202369289, 40.93794940082833 ] } },
+{ "type": "Feature", "properties": { "Name": "金山岭国际旅游度假区", "Comment": "度假区", "Lat": 40.91, "Lng": 117.252, "LB": "度假区", "lx": null }, "geometry": { "type": "Point", "coordinates": [ 117.25207857029946, 40.909966939399766 ] } }
+]
+}

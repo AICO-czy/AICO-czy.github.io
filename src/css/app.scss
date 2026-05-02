@@ -1,0 +1,338 @@
+@import './tailwind.css';
+
+/* app global css in SCSS form */
+// @import url("vue-cesium/dist/index.css");
+
+:root {
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  transform: translate3d(0, 0, 0);
+}
+
+.fullscreen {
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
+
+.tooltip-text {
+  width: 100px;
+  bottom: -30px;
+  position: absolute;
+  visibility: hidden;
+}
+
+.cesium-widget-credits {
+  display: none !important;
+  visibility: hide !important;
+}
+
+.cesium-cesiumInspector {
+  display: none !important;
+  visibility: hide !important;
+}
+
+/* app font css */
+@font-face {
+  font-family: "DDIN";
+  src: url("./fonts/D-DIN.ttf");
+}
+
+@font-face {
+  font-family: "AliHYAiHei";
+  src: url("./fonts/ALiHanYiZhiNengHeiTi-2.ttf");
+}
+
+@font-face {
+  font-family: "AlibabaPuHuiTiThin";
+  src: url("./fonts/Alibaba_PuHuiTi_2.0_35_Thin_35_Thin.ttf");
+}
+
+@font-face {
+  font-family: "AlibabaPuHuiTiLight";
+  src: url("./fonts/Alibaba_PuHuiTi_2.0_45_Light_45_Light.ttf");
+}
+
+@font-face {
+  font-family: "AlibabaPuHuiTiRegular";
+  src: url("./fonts/Alibaba_PuHuiTi_2.0_55_Regular_55_Regular.ttf");
+}
+
+@font-face {
+  font-family: "AlibabaPuHuiTiBold";
+  src: url("./fonts/Alibaba_PuHuiTi_2.0_55_Regular_85_Bold.ttf");
+}
+
+@font-face {
+  font-family: "AlibabaPuHuiTiMedium";
+  src: url("./fonts/Alibaba_PuHuiTi_2.0_65_Medium_65_Medium.ttf");
+}
+
+@font-face {
+  font-family: "AlibabaPuHuiTiSemiBold";
+  src: url("./fonts/Alibaba_PuHuiTi_2.0_75_SemiBold_75_SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "AlibabaPuHuiTiExtraBold";
+  src: url("./fonts/Alibaba_PuHuiTi_2.0_95_ExtraBold_95_ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "AlibabaPuHuiTiHeavy";
+  src: url("./fonts/Alibaba_PuHuiTi_2.0_105_Heavy_105_Heavy.ttf");
+}
+
+@font-face {
+  font-family: "AlibabaPuHuiTiBlack";
+  src: url("./fonts/Alibaba_PuHuiTi_2.0_115_Black_115_Black.ttf");
+}
+
+@font-face {
+  font-family: "SourceHanSansBold";
+  src: url("./fonts/SourceHanSansSC-Bold.otf");
+}
+
+@font-face {
+  font-family: "SourceHanSansExtraLight";
+  src: url("./fonts/SourceHanSansSC-ExtraLight.otf");
+}
+
+@font-face {
+  font-family: "SourceHanSansHeavy";
+  src: url("./fonts/SourceHanSansSC-Heavy.otf");
+}
+
+@font-face {
+  font-family: "SourceHanSansLight";
+  src: url("./fonts/SourceHanSansSC-Light.otf");
+}
+
+@font-face {
+  font-family: "SourceHanSansMedium";
+  src: url("./fonts/SourceHanSansSC-Medium.otf");
+}
+
+@font-face {
+  font-family: "SourceHanSansNormal";
+  src: url("./fonts/SourceHanSansSC-Normal.otf");
+}
+
+@font-face {
+  font-family: "SourceHanSansRegular";
+  src: url("./fonts/SourceHanSansSC-Regular.otf");
+}
+
+@font-face {
+  font-family: "方正仿宋简体";
+  src: url("./fonts/FZFSJW.ttf");
+}
+
+@font-face {
+  font-family: "Times New Roman 常规";
+  src: url("./fonts/times.ttf");
+}
+
+@font-face {
+  font-family: "Times New Roman 粗体";
+  src: url("./fonts/timesbd.ttf");
+}
+
+@font-face {
+  font-family: "Times New Roman 粗斜体";
+  src: url("./fonts/timesbi.ttf");
+}
+
+@font-face {
+  font-family: "Times New Roman 斜体";
+  src: url("./fonts/timesi.ttf");
+}
+
+@font-face {
+  font-family: "YouSheBiaoTiHei";
+  src: url("./fonts/YouSheBiaoTiHei-2.ttf");
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("./fonts/BebasNeue-1.otf");
+}
+/* app animation css */
+// 抖动动画
+@keyframes qshake {
+  0%,
+  90%,
+  100% {
+    transform: rotate(0) scale(1);
+  }
+
+  20%,
+  40% {
+    transform: rotate(-15deg) scale(1.1);
+  }
+
+  30%,
+  50% {
+    transform: rotate(15deg) scale(1.1);
+  }
+}
+
+// 跳动动画
+@keyframes qbeat {
+  25% {
+    transform: translateY(10px);
+  }
+
+  50%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  75% {
+    transform: translateY(-15px);
+  }
+}
+
+// 浮动动画
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* -----------登录页动画------------ */
+@keyframes logoAnimation {
+  0% {
+    transform: scale(0);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes loginLeft {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes loginTop {
+  0% {
+    top: -100%;
+  }
+
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes loginRight {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes loginBottom {
+  0% {
+    bottom: -100%;
+  }
+
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+/** 标题动画 */
+@keyframes shadow {
+  from {
+    letter-spacing: -90px;
+    filter: blur(1px);
+  }
+
+  to {
+    letter-spacing: 5px;
+    filter: blur(1px);
+  }
+}
+
+@keyframes enter {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1500px, 0);
+    animation-timing-function: linear;
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: scale3d(0.75, 0.75, 0.75) translate3d(0, -60px, 0);
+    animation-timing-function: linear;
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    animation-timing-function: linear;
+  }
+}
+
+@keyframes arrowMoveLeft {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(0deg) translateY(0rem) translateX(-2rem);
+    opacity: 0;
+  }
+}
+
+@keyframes arrowMoveRight {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(0deg) translateY(0rem) translateX(2rem);
+    opacity: 0;
+  }
+}
+@keyframes breathing {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.2; }
+}
+
+@keyframes carousel-animation {
+  0% { left: 0; }
+  25% { transform: translateX(0px); }
+  35% { transform: translateX(-360px); }
+  50% { transform: translateX(-360px); }
+  60% { transform: translateX(-720px); }
+  75% { transform: translateX(-720px); }
+  85% { transform: translateX(-1080px); }
+  100% { transform: translateX(-1080px); }
+}
